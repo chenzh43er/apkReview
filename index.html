@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header id="header"></header>
+<footer id = "footer"></footer>
+<script>
+    fetch('./header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+
+    // 加载 footer
+    fetch('./footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</body>
+</html>
