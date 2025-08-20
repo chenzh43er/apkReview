@@ -27,6 +27,9 @@
 
   <link rel="preload" href="./css/appDetail.css" as="style">
   <link rel="stylesheet" href="./css/appDetail.css">
+
+  <script src="./js/common.js"></script>
+  <script src="./js/jquery-3.0.0.min.js"></script>
 <body aria-hidden="false">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -391,178 +394,43 @@
       <div class="leftBox" style="height: auto !important;">
 
         <div class="appCard">
-          <img class="appCardImg" src="https://cdn.allofapps.com/app_logo/paypal.webp" alt="logo">
+          <img class="appCardImg" src="" alt="logo" id = "appCardImg">
           <div class="appCardInfo">
-            <p class="appCardInfoName">PayPal - Send, Shop, Manage</p>
-            <div class="appCardInfoScore">
-
-
-              <svg width="12" height="12">
-                <use xlink:href="#icon-start"></use>
-              </svg>
-
-
-
-              <svg width="12" height="12">
-                <use xlink:href="#icon-start"></use>
-              </svg>
-
-
-
-              <svg width="12" height="12">
-                <use xlink:href="#icon-start"></use>
-              </svg>
-
-
-
-              <svg width="12" height="12">
-                <use xlink:href="#icon-start"></use>
-              </svg>
-
-
-
-              <svg width="12" height="12">
-                <use xlink:href="#HalfStar"></use>
-              </svg>
-
-
-              <span class="scoreNum">4.2</span>
+            <p class="appCardInfoName" id = "appCardInfoName"></p>
+            <div id = "appCardInfoScore">
             </div>
           </div>
         </div>
 
-        <div class="appInfo">
-          <ul class="infoList">
-            <li class="itemInfo">
-              <div class="itemInfoleft">App Name</div>
-              <div class="itemInforight">PayPal - Send, Shop, Manage</div>
-            </li>
-            <li class="itemInfo">
-              <div class="itemInfoleft">Category</div>
-              <a class="itemInforight safety" href="/category/finance">Finance</a>
-            </li>
-            <li class="itemInfo">
-              <div class="itemInfoleft">Developer</div>
-              <a class="itemInforight safety" href="/developer/PayPal%20Mobile">PayPal Mobile</a>
-            </li>
-            <li class="itemInfo">
-              <div class="itemInfoleft">Developer Email</div>
-              <div class="itemInforight">app-feedback@paypal.com</div>
-            </li>
-            <li class="itemInfo">
-              <div class="itemInfoleft">Version</div>
-              <div class="itemInforight">4.2</div>
-            </li>
-            <li class="itemInfo">
-              <div class="itemInfoleft">Downloads</div>
-              <div class="itemInforight">100M+</div>
-            </li>
-          </ul>
+        <div class="appInfo" id = "appInfo">
+
         </div>
 
 
-        <div class="customTheme" style="height: auto; overflow: hidden;">
-          <h3>A Comprehensive Introduction to the PayPal - Send, Shop, Manage App</h3><p>In the vast landscape of financial service applications, the PayPal - Send, Shop, Manage app emerges as a multifaceted tool that promises to cover a plethora of your digital transaction needs. Available for download on both Android and iOS platforms, this free app invites users to delve into a world where shopping, sending money, and managing finances are seamlessly integrated into one cohesive experience. The app positions itself as a one-stop solution for all monetary interactions, making it an appealing choice for the tech-savvy and financially conscious alike.</p><p>1. **Smart and Secure Transactions**: The app emphasizes both security and convenience, two critical factors in the digital payment realm. Users can perform transactions in-store and online, providing a flexible approach to shopping in the modern age.</p><p>2. **Attractive Offers and Rewards**: One of the standout features of the PayPal - Send, Shop, Manage app is its potential to earn cash back. Integrated offers from coveted brands are automatically applied during checkout, subtly incentivizing the use of the app for regular purchases.</p><p>3. **Effortless Money Transfers**: Sending money has never been easier or more affordable. The app allows users to send and request money for free within the US when funded through a bank account or a PayPal balance, covering over 120 countries globally.</p><p>4. **Broadened Financial Management with Debit Cards**: Users can request a PayPal Debit Card to shop anywhere Mastercard is accepted, earning cash back on designated categories. This extends the utility of a traditional bank account, wrapped elegantly in the digital space.</p><p>5. **High-Yield Savings Opportunities**: The app boasts a high-yield savings feature, enabling users to roll their funds into a PayPal Savings account, offering a competitive annual percentage yield relative to industrial standards.</p><p>6. **Package Tracking Abilities**: Conveniently, the PayPal - Send, Shop, Manage app allows users to track orders. Even purchases not made through PayPal can be monitored, provided the user links their Gmail or Outlook accounts.</p><p>With such a broad spectrum of functionalities, the PayPal - Send, Shop, Manage app asserts itself as a robust financial technology tool. But like any product in the digital arena, it comes with its strengths and areas that could see improvement.</p><h3>The Shining Strengths of the PayPal - Send, Shop, Manage App</h3><p>As one navigates through the intricacies of the PayPal - Send, Shop, Manage app, several standout features underscore its allure and efficacy in a highly competitive market.</p><p>1. **Rewards Galore**: The noteworthy component of the app is undoubtedly its reward system. Users receive cash back on transactions at popular brand stores through offers that require minimal effort to redeem. The automatic application of these offers during the checkout process adds to user convenience and boosts savings without additional steps.</p><p>2. **Cross-Border Money Transfers**: The app's capability to operate over 120 countries sets it apart from many regional services. Sending and requesting money are free within the U.S., provided the funding comes from a bank account or PayPal balance, allowing for a seamless and cost-free user experience.</p><p>3. **Convenience of Debit Card Usage**: Introducing the PayPal Debit Mastercard into the app's ecosystem adds substantial value. Users can shop anywhere Mastercard is accepted and earn significant cash back on categories they prefer, facilitating personalized and beneficial spending.</p><p>4. **Competitive Savings Option**: The PayPal Savings service, authorized under Synchrony Bank’s aegis, offers a variable and competitive APY. For those who are strategic in financial growth, this service provides a user-friendly method of managing and increasing savings directly from the app interface.</p><h3>Unpacking the Weaknesses of the PayPal - Send, Shop, Manage App</h3><p>Despite the PayPal - Send, Shop, Manage app's virtues, users have reported several areas that might require attention and refinement to enhance the overall user experience.</p><p>1. **Eligibility Conditions for Offers**: While cash back offers present an attractive proposition, they come with their share of limitations. The offers are applicable only to eligible items, and redeeming these rewards can sometimes involve navigating a web of terms and exclusions that may not be immediately apparent to new users.</p><p>2. **International Transaction Fees**: Although domestic transfers within the U.S. are free, international transactions could incur fees that might deter users who frequently send money abroad. This could potentially overshadow the option's attractiveness for international users.</p><p>3. **Savings Interest Variability**: While the high-yield savings option is appealing, the variable nature of the APY could lead to potential unpredictability in interest earnings, making it less attractive to users seeking stability in financial growth.</p><p>4. **Reliability of Package Tracking**: Although the package tracking offers convenience, it is contingent upon users linking their email accounts. This extra step, along with potential cybersecurity concerns of linking personal emails, may be a deterrent for some.</p><h3>Words from the Users: What They Say About the PayPal - Send, Shop, Manage App</h3><p>User reviews reflect a mix of appreciation and constructive criticism for the PayPal - Send, Shop, Manage apk. Here are some sentiments shared by users:</p><p>1. **Satisfaction with Seamless Operation**: Many users praise the app's integration and ease of use, highlighting the seamless transaction process and user-friendly interface. Shoppers enjoy the automatic application of discounts and cash back, appreciating the savings without additional hassle.</p><p>2. **Critiques on International Fees**: Despite its broad geographical reach, some users express dissatisfaction with fees on international transactions. As substantial as the domestic transaction benefits are, the costs incurred abroad present a significant pain point for globally-connected users.</p><p>3. **Positivity Towards Savings Features**: Users engaging with the savings aspect often highlight it as a strong feature, appreciating the efficient management of funds and goal-setting capabilities within the app. However, the fluctuating APY is a matter of concern for those focused on consistent returns.</p><p>4. **Concern Over Link-Related Security**: A segment of users views the package tracking function with skepticism due to the necessity of linking personal email accounts, worrying over potential data privacy and security implications.</p><h3>Practical Tips and Suggestions for Users of the PayPal - Send, Shop, Manage App</h3><p>For those looking to maximize their experience with the PayPal - Send, Shop, Manage app, a few strategic approaches may enhance usability and satisfaction.</p><p>1. **Familiarize with Terms**: Thoroughly review the terms and conditions related to cash back offers and money transfers. Understanding eligibility can prevent surprises and optimize benefits.</p><p>2. **Monitor International Transaction Usage**: For users frequently engaging in international transactions, remaining vigilant about fee structures can mitigate unexpected costs. Consider using alternative methods or timing transfers strategically to minimize fees.</p><p>3. **Use Savings Functionality Strategically**: For the fluctuating APY, consider using PayPal Savings as a short to mid-term savings solution, especially if seeking flexibility in moving funds. Keep an eye on APY changes to take full advantage of favorable conditions.</p><p>4. **Ensure Email Security**: If utilizing the package tracking feature, regularly update passwords and activate two-factor authentication to bolster the security of linked email accounts. Additionally, consider integrating non-essential email addresses to minimize the risk of exposure.</p><h3>Review by the Editorial Team: A Balanced Perspective on the PayPal - Send, Shop, Manage App</h3><p>From an editorial standpoint, the PayPal - Send, Shop, Manage app holds its ground as a compelling tool for digital finance management. The app’s comprehensive layout and wide array of functionalities demonstrate an earnest effort by PayPal to cater to the varied needs of modern users.</p><p>Its reward system and cash back offers demonstrate tangible benefits that appeal to budget-conscious consumers. In contrast, the free transfer capabilities within bounds also allure users who deal frequently in personal transactions. However, it is integral that these savings and earnings balance propagate globally, curbing limitations seen in international transfers.</p><p>Moreover, the integration of the PayPal Debit Mastercard represents a significant stride towards bridging digital and physical finance spaces, making everyday spending more rewarding. The app’s user interface is intuitive, yet its functionality empowers users with complex financial management tools.</p><p>In refining the app, PayPal might consider addressing the intricacies of rewards terms and the unpredictability of fluctuating savings APYs, ensuring users can confidently bank on its offerings. Rallying to ensure transparency in fees, particularly regarding international transactions, would bolster its standing as an equitable global solution.</p><p>Ultimately, the PayPal - Send, Shop, Manage app manifests as a high-potential app poised to echo its streak of innovation and practicality. However, realizing this potential lies in its ability to continuously tune the user experience in tandem with the evolving expectations borne from both everyday users and meticulous observers.</p><p>In conclusion, for those contemplating a download or installation of the PayPal - Send, Shop, Manage app, the mélange of shopping, saving, and transaction features are likely to provide value across multiple touchpoints. Whether you are just setting up with a quick login or exploring the app’s depths, you will find abundant opportunities to streamline your financial operations in a tech-friendly manner.</p>
+        <div class="customTheme" style="height: auto; overflow: hidden;" id = "customTheme">
         </div>
 
-        <div class="flag" id="jumpSpeed" style="visibility: visible;">
-          <div class="moreBox" onclick="if (!window.__cfRLUnblockHandlers) return false; changeMinBox(false)" style="display: none;">
-            <div class="more">
-              <span class="moreText">Show More</span>
-              <svg width="13" height="8">
-                <use xlink:href="#appDetMore"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="lessBox" onclick="if (!window.__cfRLUnblockHandlers) return false; changeMinBox(true)" style="display: block;">
-            <div class="less">
-              <span class="lessText"> Show Less</span>
-              <svg width="12" height="9">
-                <use xlink:href="#appDetLess"></use>
-              </svg>
-            </div>
-          </div>
+
+        <div class="btnGroup" id = "historLink">
+
         </div>
 
-        <div class="btnGroup">
-
-          <div class="storeEntrance">
-            <div class="googlePlay">
-              <a class="coverlink" href="https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile" onclick="if (!window.__cfRLUnblockHandlers) return false; gaClick('downGP')" target="_blank" aria-label="more"></a>
-              <svg width="24" height="25">
-                <use xlink:href="#icon-googlePlay"></use>
-              </svg>
-              <span>Google Play</span>
-            </div>
-            <div class="AppStore">
-              <a class="coverlink" href="https://apps.apple.com/us/app/283646709" onclick="if (!window.__cfRLUnblockHandlers) return false; gaClick('downOS')" target="_blank" aria-label="more"></a>
-              <svg width="25" height="25">
-                <use xlink:href="#icon-AppStore"></use>
-              </svg>
-              <span>App Store</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="pageTitle">PayPal - Send, Shop, Manage Articles</div>
-        <div class="banner">
-          <div class="slideBtn" id="slideLeft" style="display: none;">
-            <svg class="icon" width="23" height="25">
-              <use xlink:href="#icon-slideLeft"></use>
-            </svg>
-          </div>
-          <div class="bannerCont">
-            <ul class="bannerList">
-
-              <li class="bannerItem">
-                <a class="coverlink" href="/article/top-apps-to-make-the-most-of-your-ramadan" aria-label="more"></a>
-                <div class="itemScreen">
-                  <img class="itemScreenImg lazyImg" src="https://cdn.allofapps.com/upload-logo/top-apps-to-make-the-most-of-your-ramadan.webp" data-src="https://cdn.allofapps.com/upload-logo/top-apps-to-make-the-most-of-your-ramadan.webp" alt="logo">
-                </div>
-                <p class="appDet">Top Apps to Make the Most of Your Ramadan</p>
-              </li>
-
-              <li class="bannerItem">
-                <a class="coverlink" href="/article/Top-10-Payment-Apps-US" aria-label="more"></a>
-                <div class="itemScreen">
-                  <img class="itemScreenImg lazyImg" src="https://cdn.allofapps.com/upload-logo/Top-10-Payment-Apps-US-cover.webp" data-src="https://cdn.allofapps.com/upload-logo/Top-10-Payment-Apps-US-cover.webp" alt="logo">
-                </div>
-                <p class="appDet">Top 10 Payment Apps Review：Which one is best for you in the US in 2023?</p>
-              </li>
-
-              <li class="bannerItem">
-                <a class="coverlink" href="/article/8-Most-Popular-Mobile-Banking-Apps-2023" aria-label="more"></a>
-                <div class="itemScreen">
-                  <img class="itemScreenImg lazyImg" src="https://cdn.allofapps.com/upload-logo/8-Most-Popular-Mobile-Banking-Apps-2023-cover.webp" data-src="https://cdn.allofapps.com/upload-logo/8-Most-Popular-Mobile-Banking-Apps-2023-cover.webp" alt="logo">
-                </div>
-                <p class="appDet">8 Most Popular Mobile Banking Apps for 2023</p>
-              </li>
-
-            </ul>
-          </div>
-          <div class="slideBtn" id="slideRight">
-            <svg class="icon" width="36" height="37">
-              <use xlink:href="#icon-slideRight"></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="frequentlyAsked">
+        <div class="frequentlyAsked" id = "frequentlyAsked">
           <h2 class="frequentlyAskedTitle"> PayPal - Send, Shop, Manage FAQ</h2>
           <ul class="frequentlyAskedCont">
 
             <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 0 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
+              <div class="Question" style="border-bottom: 1px solid rgb(230, 230, 230);">
                 <div class="serialNum">1.</div>
                 <div class="itemAskedText">Is Paypal safe?</div>
                 <div class="flagicon">
 
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
+                  <div class="icon flagImg showIcon" style="display: none;">
                     <svg width="16" height="16">
                       <use xlink:href="#FAQ-show"></use>
                     </svg>
                   </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
+                  <div class="icon flagImg hideIcon" style="display: block;">
                     <svg width="16" height="16">
                       <use xlink:href="#FAQ-hide"></use>
                     </svg>
@@ -574,191 +442,6 @@
               </div>
             </li>
 
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 1 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">2.</div>
-                <div class="itemAskedText">Can you use Paypal on Amazon? </div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">You cannot directly use PayPal on Amazon to make purchases. Amazon has its payment system called Amazon Pay, which is similar to PayPal but exclusive to Amazon.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 2 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">3.</div>
-                <div class="itemAskedText">Does Paypal charge a fee?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">PayPal may charge fees for certain transactions. For example, when receiving payments for goods or services, there is a fee of 2.9% plus a fixed fee based on the currency received. There may also be fees for certain types of withdrawals or currency conversions. It is recommended to check PayPal's website or contact their customer support for more specific information on fees.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 3 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">4.</div>
-                <div class="itemAskedText">What is the PayPal APK, and how can I download it?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">The PayPal APK is the installation file for the PayPal app on Android devices. You can download the PayPal APK from reputable sources such as the Google Play Store or the official PayPal website or Allofapps. Follow the on-screen instructions to install the app on your device securely.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 4 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">5.</div>
-                <div class="itemAskedText">Can I use PayPal to shop online?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">Yes, PayPal is widely accepted as a payment method for online shopping. When checking out at participating merchants, simply select PayPal as your payment option and log in to your account to complete the transaction. PayPal offers a secure way to shop online without sharing your financial information with sellers.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 5 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">6.</div>
-                <div class="itemAskedText">What is the process for PayPal login?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">To log in to your PayPal account, visit the PayPal website or open the PayPal app on your mobile device. Enter your email address and password associated with your account, then click or tap "Log In." You may also have the option to use biometric authentication, such as fingerprint or face ID, for added security.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 6 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">7.</div>
-                <div class="itemAskedText">How can I access PayPal in Canada?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">PayPal is readily available for users in Canada. Once downloaded, you can log in to your PayPal account using your credentials.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 7 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">8.</div>
-                <div class="itemAskedText">How do I manage my PayPal account?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">Managing your PayPal account is easy. Log in to your account to access features such as viewing your transaction history, adding or removing payment methods, updating your personal information, and setting up notifications for account activity.</p>
-              </div>
-            </li>
-
-            <li class="itemAsked">
-              <div class="Question" onclick="if (!window.__cfRLUnblockHandlers) return false; changeQuestionState( 8 )" style="border-bottom: 1px solid rgb(230, 230, 230);">
-                <div class="serialNum">9.</div>
-                <div class="itemAskedText">How can I protect my PayPal account from unauthorized access?</div>
-                <div class="flagicon">
-
-                  <div class="icon flagImg showIcon" id="showIcon" style="display: none;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-show"></use>
-                    </svg>
-                  </div>
-                  <div class="icon flagImg hideIcon" id="hideIcon" style="display: block;">
-                    <svg width="16" height="16">
-                      <use xlink:href="#FAQ-hide"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="Answer" style="display: block;">
-                <p class="AnswerItemText">To enhance the security of your PayPal account, enable features such as two-factor authentication and regularly update your password. Avoid sharing your login credentials or clicking on suspicious links or emails that may lead to phishing scams. Additionally, monitor your account activity regularly for any unauthorized transactions.
-                  In conclusion, PayPal offers a convenient and secure way to manage your finances and make online transactions. By understanding these frequently asked questions and following best practices for account security, you can make the most of your PayPal experience with confidence.</p>
-              </div>
-            </li>
-
           </ul>
         </div>
 
@@ -766,187 +449,7 @@
           <div class="appsModuleTitle">
             <h2 class="apptitle">Related Apps</h2>
           </div>
-          <ul class="topAppList">
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.squareup.cash" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/logo/square-cash.webp" data-src="https://cdn.allofapps.com/logo/square-cash.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Cash App</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.6</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.zellepay.zelle" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/zelle.webp" data-src="https://cdn.allofapps.com/upload-logo/zelle.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Zelle</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.0</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.google.android.apps.walletnfcrel" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/image%20%2890%29.webp" data-src="https://cdn.allofapps.com/upload-logo/image%20%2890%29.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Google Wallet</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.4</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.venmo" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/venmo.webp" data-src="https://cdn.allofapps.com/app_logo/venmo.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Venmo</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.2</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.google.android.apps.nbu.paisa.user" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.google.android.apps.nbu.paisa.user.webp" data-src="https://cdn.allofapps.com/app_logo/com.google.android.apps.nbu.paisa.user.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Google Pay: Save and Pay</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.1</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.dave" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.dave.webp" data-src="https://cdn.allofapps.com/app_logo/com.dave.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Dave - Banking &amp; Cash Advance</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.3</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=finance.empower" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/finance.empower.webp" data-src="https://cdn.allofapps.com/app_logo/finance.empower.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Empower: Instant Cash Advance.</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.7</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.geico.mobile" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/geico-mobile.webp" data-src="https://cdn.allofapps.com/app_logo/geico-mobile.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">GEICO Mobile - Car Insurance</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.6</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.current.app" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.current.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.current.app.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Current: The Future of Banking</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.6</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.payfare.doordash" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.payfare.doordash.webp" data-src="https://cdn.allofapps.com/app_logo/com.payfare.doordash.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">DasherDirect, by Payfare</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.7</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.allstate.view" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.allstate.view.webp" data-src="https://cdn.allofapps.com/app_logo/com.allstate.view.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">Allstate Mobile</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>3.8</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="itemAppCont">
-              <a class="coverlink" href="/app?app=com.greendotcorp.go2bank" aria-label="more"></a>
-              <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/QPGY2kpEdGKqafKRWSFbPnr2gnP9irrZ_n8pWOSmsKpMyDLeIBFBrsgXQlDfcHt1kpPN.webp" data-src="https://cdn.allofapps.com/upload-logo/QPGY2kpEdGKqafKRWSFbPnr2gnP9irrZ_n8pWOSmsKpMyDLeIBFBrsgXQlDfcHt1kpPN.webp" alt="logo">
-              <div class="itemAppDesc">
-                <p class="itemAppName">GO2bank: Mobile banking</p>
-                <p class="itemAppCate">Finance</p>
-                <div class="itemAppStart">
-                  <span>4.5</span>
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-start"></use>
-                  </svg>
-                </div>
-              </div>
-            </li>
+          <ul class="topAppList" id = "topAppList">
 
           </ul>
         </div>
@@ -959,211 +462,7 @@
           <div class="topDownloadsTitle">
             <div class="apptitle">Popular APK</div>
           </div>
-          <ul class="topDownloadsList">
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.paypal.android.p2pmobile">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/paypal.webp" data-src="https://cdn.allofapps.com/app_logo/paypal.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">PayPal - Send, Shop, Manage</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.2 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.particlenews.newsbreak">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" data-src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">NewsBreak: Local News &amp; Alerts</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.6 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.zzkko">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" data-src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">SHEIN-Shopping Online</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.5 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.weaver.app.prod">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" data-src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Talkie: Soulful AI</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.3 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.facebook.katana">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" data-src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Facebook</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">3.4 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.ubercab">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/uber.webp" data-src="https://cdn.allofapps.com/app_logo/uber.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Uber - Request a ride</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.7 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.starbucks.mobilecard">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" data-src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Starbucks</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.8 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.disney.disneyplus">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" data-src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Disney+</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.5 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.amazon.mShop.android.shopping">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" data-src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">Amazon Shopping</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.2 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.mcdonalds.app">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" data-src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">McDonald's</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.6 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.openai.chatgpt">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" data-src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">ChatGPT</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.7 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li class="appItem">
-              <a class="appCon" href="/app?app=com.enflick.android.TextNow">
-                <div class="app-img">
-                  <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/textnow.webp" data-src="https://cdn.allofapps.com/app_logo/textnow.webp" alt="icon">
-                </div>
-                <div class="app-info">
-                  <div class="app-info-tit">TextNow: Call + Text Unlimited</div>
-                  <div class="app-info-score">
-                    <span class="app-rating">4.5 </span>
-                    <svg width="12" height="12">
-                      <use xlink:href="#icon-start"></use>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </li>
+          <ul class="topDownloadsList" id = "topDownloadsList">
 
           </ul>
         </div>
@@ -1200,6 +499,183 @@
           .then(data => {
             document.getElementById('footer').innerHTML = data;
           });
+</script>
+
+<script type="module">
+  const urlParams = new URLSearchParams(window.location.search);
+  const app = urlParams.get('app');  // "John"
+
+  const lang = getLangFromPath()
+  let fetchDataUrl = ""
+  let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+  if(lang == "de"){
+    fetchDataUrl = ""
+  }else if(lang == "us")
+  {
+    fetchDataUrl = ""
+  }else
+  {
+    fetchDataUrl = ""
+  }
+  fetchDataUrl = "./js/dataGet.js"
+
+  import(fetchDataUrl).then(async module => {
+    const { queryTopRankedApps } = module;
+    const { data, error } = await  queryTopRankedApps();
+    $(document).ready(function() {
+      console.log(data)
+      let innerStr = '';
+      let picURL = '';
+      data.forEach((item,index) => {
+
+        picURL = cloudflareUrl + item.image
+
+        innerStr += `<li class="appItem">
+              <a class="appCon" href="./app.html?app=${item.alias}">
+                <div class="app-img">
+                  <img class="lazyImg" src="${picURL}" data-src="${picURL}" alt="icon">
+                </div>
+                <div class="app-info">
+                  <div class="app-info-tit">${item.name}</div>
+                  <div class="app-info-score">
+                    <span class="app-rating">${item.score}</span>
+                    <svg width="12" height="12">
+                      <use xlink:href="#icon-start"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>`
+      })
+
+      document.getElementById("topDownloadsList").innerHTML = innerStr
+
+    });
+  });
+</script>
+
+<script type="module">
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const app = urlParams.get('app');  // "John"
+
+  const lang = getLangFromPath()
+  let fetchDataUrl = ""
+  let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+  if(lang == "de"){
+    fetchDataUrl = ""
+  }else if(lang == "us")
+  {
+    fetchDataUrl = ""
+  }else
+  {
+    fetchDataUrl = ""
+  }
+  fetchDataUrl = "./js/dataGet.js"
+
+  import(fetchDataUrl).then(async module => {
+    const { queryAppsByAlias,queryAppsByTypeWithRank } = module;
+
+    const { data, error } = await  queryAppsByAlias(app);
+    const { dataType, errorType } = await  queryAppsByTypeWithRank(data[0].type);
+
+    $(document).ready(function() {
+        let appInfo = data[0]
+        console.log(appInfo)
+        console.log(dataType)
+        document.getElementById("appCardInfoName").innerText = appInfo.name
+        document.getElementById("appCardImg").src = cloudflareUrl + appInfo.image
+        document.getElementById("appCardInfoScore").innerHTML = generateScoreHTML(appInfo.score)
+
+        let innerStr = '';
+        let picURL = '';
+        dataType.forEach((item,index) => {
+
+          picURL = cloudflareUrl + item.image
+          innerStr += `<li class="itemAppCont">
+              <a class="coverlink" href="./app.html?app=${item.alias}" aria-label="more"></a>
+              <img class="ItemAppLogo lazyImg" src="${picURL}" data-src="${picURL}" alt="logo">
+              <div class="itemAppDesc">
+                <p class="itemAppName">${item.name}</p>
+                <p class="itemAppCate">${item.type}</p>
+                <div class="itemAppStart">
+                  <span>4.6</span>
+                  <svg width="12" height="12">
+                    <use xlink:href="#icon-start"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>`
+        });
+
+        document.getElementById("topAppList").innerHTML = innerStr
+
+
+
+        document.getElementById("customTheme").innerHTML = appInfo.description
+
+        document.getElementById("appInfo").innerHTML = `<ul class="infoList">
+            <li class="itemInfo">
+              <div class="itemInfoleft">App Name</div>
+              <div class="itemInforight">${appInfo.name}</div>
+            </li>
+            <li class="itemInfo">
+              <div class="itemInfoleft">Category</div>
+              <a class="itemInforight safety" href="./categoryList.html?type=${appInfo.category}">${appInfo.category}</a>
+            </li>
+            <li class="itemInfo">
+              <div class="itemInfoleft">Developer</div>
+              <a class="itemInforight safety" href="/developer/PayPal%20Mobile">${appInfo.developer}</a>
+            </li>
+            <li class="itemInfo">
+              <div class="itemInfoleft">Developer Email</div>
+              <div class="itemInforight">${appInfo.developer_email}</div>
+            </li>
+            <li class="itemInfo">
+              <div class="itemInfoleft">Version</div>
+              <div class="itemInforight">${appInfo.version}</div>
+            </li>
+            <li class="itemInfo">
+              <div class="itemInfoleft">Downloads</div>
+              <div class="itemInforight">${appInfo.downloads}</div>
+            </li>
+          </ul>`
+
+          let historical_apksJson = JSON.parse(appInfo.historical_apks);
+          if(historical_apksJson.length == 0){
+                document.getElementById("historLink").innerHTML = `<div class="storeEntrance">
+              <div class="googlePlay">
+                <a class="coverlink" href="${appInfo.download_link_google}" ></a>
+                <svg width="24" height="25">
+                  <use xlink:href="#icon-googlePlay"></use>
+                </svg>
+                <span>Google Play</span>
+              </div>
+              <div class="AppStore">
+                <a class="coverlink" href="${appInfo.download_link_ios}" ></a>
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-AppStore"></use>
+                </svg>
+                <span>App Store</span>
+              </div>
+            </div>`
+          }
+
+      try{
+        console.log(appInfo.faq)
+        let faqJson = JSON.parse(appInfo.faq);
+        if(faqJson.length > 0){
+          document.getElementById("frequentlyAsked").style.display = 'none'
+        }else{
+
+        }
+      }catch (e){
+        document.getElementById("frequentlyAsked").style.display = 'none'
+      }
+
+    });
+  });
+
 </script>
 
 </body>

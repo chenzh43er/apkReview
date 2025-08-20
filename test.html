@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase 数据查询</title>
+  <!-- 引入 jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>应用数据查询</h1>
+<div id="results">
+  <p>正在加载数据...</p>
+</div>
+
+<script type="module">
+  const fetchDataUrl = "./js/dataGet.js";
+
+  import(fetchDataUrl).then(async module => {
+    const { queryAppsByType } = module;
+
+    let typeStr = "Board";
+
+    try {
+      const { data, error } = await queryAppsByType(typeStr);
+
+      $(document).ready(function() {
+        console.log('查询结果:', data);
+
+        if (error) {
+          $('#results').html(`
+                            <div style="color: red;">
+                                <h3>查询出错</h3>
+                                <p>${error.message}</p>
+                            </div>
+                        `);
+          return;
+        }
+
+        if (data && data.length > 0) {
+          let html = `<h3>类型为 "${typeStr}" 的应用 (${data.length} 个)</h3>`;
+          data.forEach(app => {
+            html += `
+                                <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+                                    <h4>${app.name || '未命名应用'}</h4>
+                                    <p>ID: ${app.id}</p>
+                                    <p>类型: ${app.type}</p>
+                                    <p>创建时间: ${app.created_at || '未知'}</p>
+                                </div>
+                            `;
+          });
+          $('#results').html(html);
+        } else {
+          $('#results').html(`<p>没有找到类型为 "${typeStr}" 的应用</p>`);
+        }
+      });
+    } catch (importError) {
+      console.error('导入模块出错:', importError);
+      $('#results').html('<p>加载数据模块失败</p>');
+    }
+  });
+</script>
+</body>
+</html>

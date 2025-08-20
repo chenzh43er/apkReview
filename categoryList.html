@@ -25,6 +25,9 @@
 
   <link rel="preload" href="./css/categorylist.css" as="style">
   <link rel="stylesheet" href="./css/categorylist.css">
+
+  <script src="./js/common.js"></script>
+  <script src="./js/jquery-3.0.0.min.js"></script>
 <body>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -389,225 +392,9 @@
 
 
     <div class="categoryList">
-      <ul class="hotAppList">
+      <ul class="hotAppList" id = "hotAppList">
 
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.paypal.android.p2pmobile" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/paypal.webp" data-src="https://cdn.allofapps.com/app_logo/paypal.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">PayPal - Send, Shop, Manage</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.2 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.squareup.cash" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/logo/square-cash.webp" data-src="https://cdn.allofapps.com/logo/square-cash.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Cash App</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.6 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.zellepay.zelle" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/zelle.webp" data-src="https://cdn.allofapps.com/upload-logo/zelle.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Zelle</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.0 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.google.android.apps.walletnfcrel" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/image%20%2890%29.webp" data-src="https://cdn.allofapps.com/upload-logo/image%20%2890%29.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Google Wallet</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.4 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.venmo" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/venmo.webp" data-src="https://cdn.allofapps.com/app_logo/venmo.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Venmo</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.2 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.google.android.apps.nbu.paisa.user" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.google.android.apps.nbu.paisa.user.webp" data-src="https://cdn.allofapps.com/app_logo/com.google.android.apps.nbu.paisa.user.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Google Pay: Save and Pay</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.1 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.dave" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.dave.webp" data-src="https://cdn.allofapps.com/app_logo/com.dave.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Dave - Banking &amp; Cash Advance</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.3 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=finance.empower" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/finance.empower.webp" data-src="https://cdn.allofapps.com/app_logo/finance.empower.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Empower: Instant Cash Advance.</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.7 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.geico.mobile" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/geico-mobile.webp" data-src="https://cdn.allofapps.com/app_logo/geico-mobile.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">GEICO Mobile - Car Insurance</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.6 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.current.app" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.current.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.current.app.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Current: The Future of Banking</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.6 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.payfare.doordash" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.payfare.doordash.webp" data-src="https://cdn.allofapps.com/app_logo/com.payfare.doordash.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">DasherDirect, by Payfare</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.7 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.allstate.view" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.allstate.view.webp" data-src="https://cdn.allofapps.com/app_logo/com.allstate.view.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Allstate Mobile</p>
-            <div class="itemHotContInfoDesc">
-              <span> 3.8 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.greendotcorp.go2bank" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/QPGY2kpEdGKqafKRWSFbPnr2gnP9irrZ_n8pWOSmsKpMyDLeIBFBrsgXQlDfcHt1kpPN.webp" data-src="https://cdn.allofapps.com/upload-logo/QPGY2kpEdGKqafKRWSFbPnr2gnP9irrZ_n8pWOSmsKpMyDLeIBFBrsgXQlDfcHt1kpPN.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">GO2bank: Mobile banking</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.5 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=io.metamask" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/io.metamask.webp" data-src="https://cdn.allofapps.com/app_logo/io.metamask.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">MetaMask - Blockchain Wallet</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.5 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.discoverfinancial.mobile" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.discoverfinancial.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.discoverfinancial.mobile.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Discover Mobile</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.6 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.greendot.walmart.prepaid" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.greendot.walmart.prepaid.webp" data-src="https://cdn.allofapps.com/app_logo/com.greendot.walmart.prepaid.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Walmart MoneyCard</p>
-            <div class="itemHotContInfoDesc">
-              <span> 3.8 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.usbank.mobilebanking" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/com.usbank.mobilebanking.jpg" data-src="https://cdn.allofapps.com/upload-logo/com.usbank.mobilebanking.jpg" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">U.S. Bank Mobile Banking</p>
-            <div class="itemHotContInfoDesc">
-              <span> 4.7 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont">
-          <a class="coverlink" href="/app?app=com.cardinalcommerce.greendot" aria-label="more"></a>
-          <img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.cardinalcommerce.greendot.webp" data-src="https://cdn.allofapps.com/app_logo/com.cardinalcommerce.greendot.webp" alt="logo">
-          <div class="itemHotContInfo">
-            <p class="itemHotContInfoTitle">Green Dot - Mobile Banking</p>
-            <div class="itemHotContInfoDesc">
-              <span> 3.9 </span>
-              <img class="star" src="/statics/image/star.svg" alt="starIcon">
-            </div>
-          </div>
-        </li>
-
-        <li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.syf.mysynchrony.webp" data-src="https://cdn.allofapps.com/app_logo/com.syf.mysynchrony.webp" alt="logo"><a class="coverlink" href="/app?app=com.syf.mysynchrony"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">MySynchrony</p><div class="itemHotContInfoDesc"><span>3.4</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.mobilecreditcards.webp" data-src="https://cdn.allofapps.com/app_logo/com.mobilecreditcards.webp" alt="logo"><a class="coverlink" href="/app?app=com.mobilecreditcards"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">NerdWallet: Manage Your Money</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/1123hnb.webp" data-src="https://cdn.allofapps.com/upload-logo/1123hnb.webp" alt="logo"><a class="coverlink" href="/app?app=com.rapid.rapidpay"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">rapid! Pay</p><div class="itemHotContInfoDesc"><span>4.4</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.barclaycardus.webp" data-src="https://cdn.allofapps.com/app_logo/com.barclaycardus.webp" alt="logo"><a class="coverlink" href="/app?app=com.barclaycardus"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Barclays US Credit Cards</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/irs2go.webp" data-src="https://cdn.allofapps.com/app_logo/irs2go.webp" alt="logo"><a class="coverlink" href="/app?app=gov.irs"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">IRS2Go</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.majority.android.webp" data-src="https://cdn.allofapps.com/app_logo/com.majority.android.webp" alt="logo"><a class="coverlink" href="/app?app=com.majority.android"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">MAJORITY: Mobile banking</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.transferwise.android.webp" data-src="https://cdn.allofapps.com/app_logo/com.transferwise.android.webp" alt="logo"><a class="coverlink" href="/app?app=com.transferwise.android"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Wise</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.pktmny.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.pktmny.mobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.pktmny.mobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">GoHenry Youth Debit Card &amp; App</p><div class="itemHotContInfoDesc"><span>4.0</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.perpay.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.perpay.mobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.perpay.mobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Perpay - Shop and Build Credit</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.tradingview.tradingviewapp.webp" data-src="https://cdn.allofapps.com/app_logo/com.tradingview.tradingviewapp.webp" alt="logo"><a class="coverlink" href="/app?app=com.tradingview.tradingviewapp"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">TradingView: Track All Markets</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/980.webp" data-src="https://cdn.allofapps.com/upload-logo/980.webp" alt="logo"><a class="coverlink" href="/app?app=com.brisk.jpay"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">JPay</p><div class="itemHotContInfoDesc"><span>4.1</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.yahoo.mobile.client.android.finance.webp" data-src="https://cdn.allofapps.com/app_logo/com.yahoo.mobile.client.android.finance.webp" alt="logo"><a class="coverlink" href="/app?app=com.yahoo.mobile.client.android.finance"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Yahoo Finance: Stock News</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.creditsesame.webp" data-src="https://cdn.allofapps.com/app_logo/com.creditsesame.webp" alt="logo"><a class="coverlink" href="/app?app=com.creditsesame"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Credit Sesame: Build Credit</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.upgrademobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.upgrademobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.upgrademobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Upgrade</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.intermexwire.itmxwebagent.webp" data-src="https://cdn.allofapps.com/app_logo/com.intermexwire.itmxwebagent.webp" alt="logo"><a class="coverlink" href="/app?app=com.intermexwire.itmxwebagent"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Amigo Paisano</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.joinroot.root.webp" data-src="https://cdn.allofapps.com/app_logo/com.joinroot.root.webp" alt="logo"><a class="coverlink" href="/app?app=com.joinroot.root"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Root: Better car insurance</p><div class="itemHotContInfoDesc"><span>3.4</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/app.indie.my.webp" data-src="https://cdn.allofapps.com/app_logo/app.indie.my.webp" alt="logo"><a class="coverlink" href="/app?app=app.indie.my"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Found: Business Banking</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.merrickbank.smartclient.prod.webp" data-src="https://cdn.allofapps.com/app_logo/com.merrickbank.smartclient.prod.webp" alt="logo"><a class="coverlink" href="/app?app=com.merrickbank.smartclient.prod"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Merrick Bank Mobile</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.lemonadeinc.lemonade.webp" data-src="https://cdn.allofapps.com/app_logo/com.lemonadeinc.lemonade.webp" alt="logo"><a class="coverlink" href="/app?app=com.lemonadeinc.lemonade"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Lemonade Insurance</p><div class="itemHotContInfoDesc"><span>4.4</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.revolut.revolut.webp" data-src="https://cdn.allofapps.com/app_logo/com.revolut.revolut.webp" alt="logo"><a class="coverlink" href="/app?app=com.revolut.revolut"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Revolut: Spend, Save, Trade</p><div class="itemHotContInfoDesc"><span>4.5</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.natgen.d2cplatform.mobileapps.webp" data-src="https://cdn.allofapps.com/app_logo/com.natgen.d2cplatform.mobileapps.webp" alt="logo"><a class="coverlink" href="/app?app=com.natgen.d2cplatform.mobileapps"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Direct Auto Insurance</p><div class="itemHotContInfoDesc"><span>2.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.keefegroup.access.corrections.webp" data-src="https://cdn.allofapps.com/app_logo/com.keefegroup.access.corrections.webp" alt="logo"><a class="coverlink" href="/app?app=com.keefegroup.access.corrections"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Access Corrections</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.jerrym.webp" data-src="https://cdn.allofapps.com/app_logo/com.jerrym.webp" alt="logo"><a class="coverlink" href="/app?app=com.jerrym"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Jerry: The AllCar™ App</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.chexar.ingo.android.webp" data-src="https://cdn.allofapps.com/app_logo/com.chexar.ingo.android.webp" alt="logo"><a class="coverlink" href="/app?app=com.chexar.ingo.android"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Ingo Money App – Cash Checks</p><div class="itemHotContInfoDesc"><span>4.1</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/team.opay.pay.egypt.webp" data-src="https://cdn.allofapps.com/app_logo/team.opay.pay.egypt.webp" alt="logo"><a class="coverlink" href="/app?app=team.opay.pay.egypt"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">OPay Egypt | Bill Payment</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/za.co.vodacom.vodapay.webp" data-src="https://cdn.allofapps.com/app_logo/za.co.vodacom.vodapay.webp" alt="logo"><a class="coverlink" href="/app?app=za.co.vodacom.vodapay"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">VodaPay</p><div class="itemHotContInfoDesc"><span>3.8</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/uk.gov.hmrc.ptcalc.webp" data-src="https://cdn.allofapps.com/app_logo/uk.gov.hmrc.ptcalc.webp" alt="logo"><a class="coverlink" href="/app?app=uk.gov.hmrc.ptcalc"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">HMRC</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.fancyapps.converter.webp" data-src="https://cdn.allofapps.com/app_logo/com.fancyapps.converter.webp" alt="logo"><a class="coverlink" href="/app?app=com.fancyapps.converter"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Currency Converter</p><div class="itemHotContInfoDesc"><span>1.2</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.mileagewise.mileagewiseonline.webp" data-src="https://cdn.allofapps.com/app_logo/com.mileagewise.mileagewiseonline.webp" alt="logo"><a class="coverlink" href="/app?app=com.mileagewise.mileagewiseonline"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Mileage Tracker by MileageWise</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.consumerug.webp" data-src="https://cdn.allofapps.com/app_logo/com.consumerug.webp" alt="logo"><a class="coverlink" href="/app?app=com.consumerug"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">MoMo</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.adpdigital.mbs.ayande.webp" data-src="https://cdn.allofapps.com/app_logo/com.adpdigital.mbs.ayande.webp" alt="logo"><a class="coverlink" href="/app?app=com.adpdigital.mbs.ayande"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">همراه کارت | Hamrah Card</p><div class="itemHotContInfoDesc"><span>4.0</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.avant.android.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.avant.android.app.webp" alt="logo"><a class="coverlink" href="/app?app=com.avant.android.app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Avant Credit</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.xoom.android.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.xoom.android.app.webp" alt="logo"><a class="coverlink" href="/app?app=com.xoom.android.app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Xoom Money Transfer</p><div class="itemHotContInfoDesc"><span>4.8</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.uspsfcu.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.uspsfcu.mobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.uspsfcu.mobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">U. S. Postal Service FCU</p><div class="itemHotContInfoDesc"><span>4.0</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.hrblock.blockmobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.hrblock.blockmobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.hrblock.blockmobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">MyBlock</p><div class="itemHotContInfoDesc"><span>4.2</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.lcard_app.webp" data-src="https://cdn.allofapps.com/app_logo/com.lcard_app.webp" alt="logo"><a class="coverlink" href="/app?app=com.lcard_app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Mission Lane</p><div class="itemHotContInfoDesc"><span>4.8</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.mercurycards.android.cardapp.webp" data-src="https://cdn.allofapps.com/app_logo/com.mercurycards.android.cardapp.webp" alt="logo"><a class="coverlink" href="/app?app=com.mercurycards.android.cardapp"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Mercury Cards</p><div class="itemHotContInfoDesc"><span>4.5</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.advance.cash.payday.webp" data-src="https://cdn.allofapps.com/app_logo/com.advance.cash.payday.webp" alt="logo"><a class="coverlink" href="/app?app=com.advance.cash.payday"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Cash Advance &amp; Payday Loans</p><div class="itemHotContInfoDesc"><span>4.0</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/cash.advance.app.borrow.money.instantly.webp" data-src="https://cdn.allofapps.com/app_logo/cash.advance.app.borrow.money.instantly.webp" alt="logo"><a class="coverlink" href="/app?app=cash.advance.app.borrow.money.instantly"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Cash Advance App: Borrow Money</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.woodforest.webp" data-src="https://cdn.allofapps.com/app_logo/com.woodforest.webp" alt="logo"><a class="coverlink" href="/app?app=com.woodforest"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Woodforest Mobile Banking</p><div class="itemHotContInfoDesc"><span>4.1</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.hatfield.grid.webp" data-src="https://cdn.allofapps.com/app_logo/com.hatfield.grid.webp" alt="logo"><a class="coverlink" href="/app?app=com.hatfield.grid"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Grid Money</p><div class="itemHotContInfoDesc"><span>4.5</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/bgsz.webp" data-src="https://cdn.allofapps.com/upload-logo/bgsz.webp" alt="logo"><a class="coverlink" href="/app?app=io.sunship.app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Vibrant - A Stellar Wallet</p><div class="itemHotContInfoDesc"><span>4.1</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/org.redwoodcu.banking.webp" data-src="https://cdn.allofapps.com/app_logo/org.redwoodcu.banking.webp" alt="logo"><a class="coverlink" href="/app?app=org.redwoodcu.banking"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Redwood Credit Union</p><div class="itemHotContInfoDesc"><span>4.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.higherone.mobile.android.webp" data-src="https://cdn.allofapps.com/app_logo/com.higherone.mobile.android.webp" alt="logo"><a class="coverlink" href="/app?app=com.higherone.mobile.android"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">BankMobile App</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.ally.auto.activity.webp" data-src="https://cdn.allofapps.com/app_logo/com.ally.auto.activity.webp" alt="logo"><a class="coverlink" href="/app?app=com.ally.auto.activity"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Ally Auto Finance</p><div class="itemHotContInfoDesc"><span>3.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.worldremit.android.webp" data-src="https://cdn.allofapps.com/app_logo/com.worldremit.android.webp" alt="logo"><a class="coverlink" href="/app?app=com.worldremit.android"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">WorldRemit: Money Transfer App</p><div class="itemHotContInfoDesc"><span>4.6</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.dotin.wepod.webp" data-src="https://cdn.allofapps.com/app_logo/com.dotin.wepod.webp" alt="logo"><a class="coverlink" href="/app?app=com.dotin.wepod"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Wepod | ویپاد</p><div class="itemHotContInfoDesc"><span>4.2</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.phonepe.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.phonepe.app.webp" alt="logo"><a class="coverlink" href="/app?app=com.phonepe.app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">PhonePe UPI, Payment, Recharge</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.conduent.ebt.webp" data-src="https://cdn.allofapps.com/app_logo/com.conduent.ebt.webp" alt="logo"><a class="coverlink" href="/app?app=com.conduent.ebt"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">ConnectEBT</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.i2c.mcpcc.cmaFaceLift.webp" data-src="https://cdn.allofapps.com/app_logo/com.i2c.mcpcc.cmaFaceLift.webp" alt="logo"><a class="coverlink" href="/app?app=com.i2c.mcpcc.cmaFaceLift"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Direct Express®</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.optum.mobile.OptumBank.webp" data-src="https://cdn.allofapps.com/app_logo/com.optum.mobile.OptumBank.webp" alt="logo"><a class="coverlink" href="/app?app=com.optum.mobile.OptumBank"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Optum Bank</p><div class="itemHotContInfoDesc"><span>4.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.freedom.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.freedom.mobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.freedom.mobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Freedom Mortgage</p><div class="itemHotContInfoDesc"><span>4.8</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.quick.money.loan.payday.advance.webp" data-src="https://cdn.allofapps.com/app_logo/com.quick.money.loan.payday.advance.webp" alt="logo"><a class="coverlink" href="/app?app=com.quick.money.loan.payday.advance"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Quick Money Loan until Payday</p><div class="itemHotContInfoDesc"><span>4.1</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.paysign.app.webp" data-src="https://cdn.allofapps.com/app_logo/com.paysign.app.webp" alt="logo"><a class="coverlink" href="/app?app=com.paysign.app"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Paysign®</p><div class="itemHotContInfoDesc"><span>3.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.dbs.plynk.webp" data-src="https://cdn.allofapps.com/app_logo/com.dbs.plynk.webp" alt="logo"><a class="coverlink" href="/app?app=com.dbs.plynk"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Plynk: Investing Refreshed</p><div class="itemHotContInfoDesc"><span>4.4</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.geraldwallet.webp" data-src="https://cdn.allofapps.com/app_logo/com.geraldwallet.webp" alt="logo"><a class="coverlink" href="/app?app=com.geraldwallet"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Gerald: Cash Advance App</p><div class="itemHotContInfoDesc"><span>3.7</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.nexttapps.mmo.webp" data-src="https://cdn.allofapps.com/app_logo/com.nexttapps.mmo.webp" alt="logo"><a class="coverlink" href="/app?app=com.nexttapps.mmo"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Make Money &amp; Work From Home</p><div class="itemHotContInfoDesc"><span>3.9</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/zelle.webp" data-src="https://cdn.allofapps.com/upload-logo/zelle.webp" alt="logo"><a class="coverlink" href="/app?app=zel"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Zelle</p><div class="itemHotContInfoDesc"><span>4.0</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.kalshi.mobile.webp" data-src="https://cdn.allofapps.com/app_logo/com.kalshi.mobile.webp" alt="logo"><a class="coverlink" href="/app?app=com.kalshi.mobile"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Kalshi: Trade on the Election</p><div class="itemHotContInfoDesc"><span>4.5</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.fintwist.mobileapp.webp" data-src="https://cdn.allofapps.com/app_logo/com.fintwist.mobileapp.webp" alt="logo"><a class="coverlink" href="/app?app=com.fintwist.mobileapp"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Fintwist</p><div class="itemHotContInfoDesc"><span>4.2</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/app_logo/jp.co.smbc.direct.webp" data-src="https://cdn.allofapps.com/app_logo/jp.co.smbc.direct.webp" alt="logo"><a class="coverlink" href="/app?app=jp.co.smbc.direct"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">三井住友銀行アプリ</p><div class="itemHotContInfoDesc"><span>3.3</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li><li class="itemHotAppCont"><img class="itemHotContLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/Latitude%20%281%29.webp" data-src="https://cdn.allofapps.com/upload-logo/Latitude%20%281%29.webp" alt="logo"><a class="coverlink" href="/app?app=com.latitudefinancial.latitudeapp"></a><div class="itemHotContInfo"><p class="itemHotContInfoTitle">Latitude</p><div class="itemHotContInfoDesc"><span>4.2</span><img class="star" src="/statics/image/star.svg" alt="starIcon"></div></div></li></ul>
+      </ul>
       <div class="loading" style="display: block;">--No more data--</div>
     </div>
 
@@ -639,6 +426,56 @@
           .then(data => {
             document.getElementById('footer').innerHTML = data;
           });
+</script>
+
+<script type="module">
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const type = urlParams.get('type');  // "John"
+
+  const lang = getLangFromPath()
+  let fetchDataUrl = ""
+  let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+  if(lang == "de"){
+    fetchDataUrl = ""
+  }else if(lang == "us")
+  {
+    fetchDataUrl = ""
+  }else
+  {
+    fetchDataUrl = ""
+  }
+  fetchDataUrl = "./js/dataGet.js"
+  import(fetchDataUrl).then(async module => {
+    const { queryAppsByType } = module;
+
+    let typeStr = type
+
+    const { data, error } = await  queryAppsByType(typeStr);
+    $(document).ready(function() {
+        //console.log(data)
+        let innerStr = '';
+        let picURL = '';
+        data.forEach((item,index) => {
+            picURL = cloudflareUrl + item.image;
+
+            innerStr += `<li class="itemHotAppCont">
+            <a class="coverlink" href="./app.html?app=${item.alias}" aria-label="more"></a>
+            <img class="itemHotContLogo lazyImg" src="${picURL}" data-src="${picURL}" alt="logo">
+            <div class="itemHotContInfo">
+              <p class="itemHotContInfoTitle">${item.name}</p>
+              <div class="itemHotContInfoDesc">
+                <span> ${item.score} </span>
+                <img class="star" src="/statics/image/star.svg" alt="starIcon">
+              </div>
+            </div>
+          </li>`
+        });
+        document.getElementById('hotAppList').innerHTML = innerStr;
+
+    });
+  });
+
 </script>
 
 </body>
