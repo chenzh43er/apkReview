@@ -25,7 +25,10 @@
 
     <link rel="preload" href="./css/version.css" as="style">
     <link rel="stylesheet" href="./css/version.css">
-<body>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/jquery-3.0.0.min.js"></script>
+<body style="display: none">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <defs>
@@ -388,22 +391,13 @@
         <div class="versionCont">
             <div class="leftBox">
 
-                <div class="appCard">
-                    <img class="appCardImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                    <div class="appCardInfo">
-                        <p class="appCardInfoName">NewsBreak: Local News &amp; Alerts</p>
-                        <div class="appCardInfoScore">
-                            <svg width="12" height="12">
-                                <use xlink:href="#icon-start"></use>
-                            </svg>
-                            <span class="scoreNum">4.6</span>
-                        </div>
-                    </div>
+                <div class="appCard" id = "appCard">
+
                 </div>
 
 
                 <div class="btnGroup">
-                    <div class="storeEntrance">
+                    <div class="storeEntrance" id = "storeEntrance">
                         <div class="googlePlay">
                             <a class="coverlink" href="https://play.google.com/store/apps/details?id=com.particlenews.newsbreak" onclick="if (!window.__cfRLUnblockHandlers) return false; gaClick('downGP')" target="_blank" aria-label="googlePlay"></a>
                             <svg width="24" height="25">
@@ -425,7 +419,7 @@
 
                 <div class="historyVersionWrap">
                     <h2 class="historyVersionTitle">Previous APK Versions</h2>
-                    <ul class="versionList">
+                    <ul class="versionList" id = "versionList">
 
                         <li class="versionItem">
                             <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.31.0.apk" aria-label="Download"></a>
@@ -446,1298 +440,6 @@
                             </div>
                         </li>
 
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.30.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.30.0</div>
-                                <div class="versionDet">
-                                    <span class="size">38.1 MB</span>
-                                    <span class="time">2025-07-22</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.29.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.29.0</div>
-                                <div class="versionDet">
-                                    <span class="size">35.3 MB</span>
-                                    <span class="time">2025-07-15</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.27.2.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.27.2</div>
-                                <div class="versionDet">
-                                    <span class="size">35.2 MB</span>
-                                    <span class="time">2025-07-01</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.27.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.27.0</div>
-                                <div class="versionDet">
-                                    <span class="size">35.1 MB</span>
-                                    <span class="time">2025-06-23</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.25.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.25.0</div>
-                                <div class="versionDet">
-                                    <span class="size">35.1 MB</span>
-                                    <span class="time">2025-06-17</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.24.2.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.24.2</div>
-                                <div class="versionDet">
-                                    <span class="size">35.0 MB</span>
-                                    <span class="time">2025-06-14</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.23.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.23.0</div>
-                                <div class="versionDet">
-                                    <span class="size">35.0 MB</span>
-                                    <span class="time">2025-06-04</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.21.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.21.0</div>
-                                <div class="versionDet">
-                                    <span class="size">34.7 MB</span>
-                                    <span class="time">2025-05-21</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.20.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.20.0</div>
-                                <div class="versionDet">
-                                    <span class="size">34.6 MB</span>
-                                    <span class="time">2025-05-13</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.18.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.18.0</div>
-                                <div class="versionDet">
-                                    <span class="size">32.9 MB</span>
-                                    <span class="time">2025-04-30</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.17.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.17.1</div>
-                                <div class="versionDet">
-                                    <span class="size">32.8 MB</span>
-                                    <span class="time">2025-04-25</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.17.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.17.0</div>
-                                <div class="versionDet">
-                                    <span class="size">32.8 MB</span>
-                                    <span class="time">2025-04-23</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.16.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.16.0</div>
-                                <div class="versionDet">
-                                    <span class="size">32.8 MB</span>
-                                    <span class="time">2025-04-14</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.13.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.13.0</div>
-                                <div class="versionDet">
-                                    <span class="size">32.5 MB</span>
-                                    <span class="time">2025-03-25</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.9.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.9.0</div>
-                                <div class="versionDet">
-                                    <span class="size">31.9 MB</span>
-                                    <span class="time">2025-02-25</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-25.7.2.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">25.7.2</div>
-                                <div class="versionDet">
-                                    <span class="size">31.1 MB</span>
-                                    <span class="time">2025-02-13</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.48.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.48.0</div>
-                                <div class="versionDet">
-                                    <span class="size">28.7 MB</span>
-                                    <span class="time">2024-11-26</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.46.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.46.0</div>
-                                <div class="versionDet">
-                                    <span class="size">28.7 MB</span>
-                                    <span class="time">2024-11-12</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.45.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.45.0</div>
-                                <div class="versionDet">
-                                    <span class="size">31.2 MB</span>
-                                    <span class="time">2024-11-04</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.43.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.43.1</div>
-                                <div class="versionDet">
-                                    <span class="size">30.8 MB</span>
-                                    <span class="time">2024-10-24</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.42.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.42.0</div>
-                                <div class="versionDet">
-                                    <span class="size">31.4 MB</span>
-                                    <span class="time">2024-10-15</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.41.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.41.1</div>
-                                <div class="versionDet">
-                                    <span class="size">31.3 MB</span>
-                                    <span class="time">2024-10-10</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.31.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.31.0</div>
-                                <div class="versionDet">
-                                    <span class="size">30.8 MB</span>
-                                    <span class="time">2024-07-29</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.30.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.30.1</div>
-                                <div class="versionDet">
-                                    <span class="size">30.5 MB</span>
-                                    <span class="time">2024-07-24</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.28.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.28.1</div>
-                                <div class="versionDet">
-                                    <span class="size">30.3 MB</span>
-                                    <span class="time">2024-07-10</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.16.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.16.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.6 MB</span>
-                                    <span class="time">2024-04-16</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.14.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.14.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.6 MB</span>
-                                    <span class="time">2024-04-06</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.13.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.13.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.5 MB</span>
-                                    <span class="time">2024-03-28</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.13.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.13.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.5 MB</span>
-                                    <span class="time">2024-03-26</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.11.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.11.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.5 MB</span>
-                                    <span class="time">2024-03-12</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.10.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.10.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.5 MB</span>
-                                    <span class="time">2024-03-05</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.8.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.8.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.4 MB</span>
-                                    <span class="time">2024-02-22</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-24.5.2.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">24.5.2</div>
-                                <div class="versionDet">
-                                    <span class="size">29.4 MB</span>
-                                    <span class="time">2024-02-08</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.51.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.51.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.2 MB</span>
-                                    <span class="time">2023-12-19</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.50.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.50.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.2 MB</span>
-                                    <span class="time">2023-12-10</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.46.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.46.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.1 MB</span>
-                                    <span class="time">2023-11-14</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.45.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.45.0</div>
-                                <div class="versionDet">
-                                    <span class="size">29.1 MB</span>
-                                    <span class="time">2023-11-07</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.43.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.43.1</div>
-                                <div class="versionDet">
-                                    <span class="size">29.0 MB</span>
-                                    <span class="time">2023-10-24</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.41.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.41.0</div>
-                                <div class="versionDet">
-                                    <span class="size">28.6 MB</span>
-                                    <span class="time">2023-10-10</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.39.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.39.0</div>
-                                <div class="versionDet">
-                                    <span class="size">28.5 MB</span>
-                                    <span class="time">2023-09-26</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.38.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.38.1</div>
-                                <div class="versionDet">
-                                    <span class="size">28.3 MB</span>
-                                    <span class="time">2023-09-20</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.36.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.36.1</div>
-                                <div class="versionDet">
-                                    <span class="size">25.2 MB</span>
-                                    <span class="time">2023-09-06</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.34.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.34.0</div>
-                                <div class="versionDet">
-                                    <span class="size">24.9 MB</span>
-                                    <span class="time">2023-08-22</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.33.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.33.0</div>
-                                <div class="versionDet">
-                                    <span class="size">24.3 MB</span>
-                                    <span class="time">2023-08-13</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak-23.32.2.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.32.2</div>
-                                <div class="versionDet">
-                                    <span class="size">24.3</span>
-                                    <span class="time">2023-08-11</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.24.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.24.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.66 MB</span>
-                                    <span class="time">2023-08-07</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.23.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.23.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.66 MB</span>
-                                    <span class="time">2023-06-20</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.22.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.22.1</div>
-                                <div class="versionDet">
-                                    <span class="size">47.51 MB</span>
-                                    <span class="time">2023-06-13</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.21.1.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.21.1</div>
-                                <div class="versionDet">
-                                    <span class="size">47.46 MB</span>
-                                    <span class="time">2023-06-06</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.20.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.20.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.45 MB</span>
-                                    <span class="time">2023-05-30</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.19.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.19.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.45 MB</span>
-                                    <span class="time">2023-05-23</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.17.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.17.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.35 MB</span>
-                                    <span class="time">2023-05-16</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.16.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.16.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.35 MB</span>
-                                    <span class="time">2023-05-02</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.15.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.15.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.34 MB</span>
-                                    <span class="time">2023-04-25</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.12.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.12.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.24 MB</span>
-                                    <span class="time">2023-04-18</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak_23.11.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.11.0</div>
-                                <div class="versionDet">
-                                    <span class="size">47.24 MB</span>
-                                    <span class="time">2023-03-27</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak23.7.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">23.7.0</div>
-                                <div class="versionDet">
-                                    <span class="size">46.63 MB</span>
-                                    <span class="time">2023-03-21</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.44.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.44.0</div>
-                                <div class="versionDet">
-                                    <span class="size">49.13 MB</span>
-                                    <span class="time">2023-02-08</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.31.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.31.0</div>
-                                <div class="versionDet">
-                                    <span class="size">24.54 MB</span>
-                                    <span class="time">2022-11-04</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.30.0.apk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.30.0</div>
-                                <div class="versionDet">
-                                    <span class="size">24.49 MB</span>
-                                    <span class="time">2022-08-08</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.29.1.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.29.1</div>
-                                <div class="versionDet">
-                                    <span class="size">20.0 MB</span>
-                                    <span class="time">2022-08-01</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.28.0.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.28.0</div>
-                                <div class="versionDet">
-                                    <span class="size">20.05 MB</span>
-                                    <span class="time">2022-07-25</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.25.0.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.25.0</div>
-                                <div class="versionDet">
-                                    <span class="size">16.85 MB</span>
-                                    <span class="time">2022-07-18</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.24.0.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.24.0</div>
-                                <div class="versionDet">
-                                    <span class="size">16.53 MB</span>
-                                    <span class="time">2022-06-27</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.22.0.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.22.0</div>
-                                <div class="versionDet">
-                                    <span class="size">16.49 MB</span>
-                                    <span class="time">2022-06-20</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.21.0.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.21.0</div>
-                                <div class="versionDet">
-                                    <span class="size">16.6 MB</span>
-                                    <span class="time">2022-05-26</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.19.2.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.19.2</div>
-                                <div class="versionDet">
-                                    <span class="size">16.8 MB</span>
-                                    <span class="time">2022-05-15</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
-                        <li class="versionItem">
-                            <a class="coverlink" href="https://dl.allofapps.com/apk%2Fcom.particlenews.newsbreak22.19.1.xapk" aria-label="Download"></a>
-                            <img class="versionItemImg" src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="logo">
-                            <div class="versionItemInfo">
-                                <div class="versionNumber">22.19.1</div>
-                                <div class="versionDet">
-                                    <span class="size">17.0 MB</span>
-                                    <span class="time">2022-05-13</span>
-                                </div>
-                            </div>
-                            <div class="versionItemRight">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
-                                </svg>
-                            </div>
-                        </li>
-
                     </ul>
                 </div>
 
@@ -1747,157 +449,7 @@
                     <div class="appsModuleTitle">
                         <h2 class="apptitle">Related Apps</h2>
                     </div>
-                    <ul class="topAppList">
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.paypal.android.p2pmobile" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/paypal.webp" data-src="https://cdn.allofapps.com/app_logo/paypal.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">PayPal - Send, Shop, Manage</p>
-                                <p class="itemAppCate">Finance</p>
-                                <div class="itemAppStart">
-                                    <span>4.2</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.zzkko" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" data-src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">SHEIN-Shopping Online</p>
-                                <p class="itemAppCate">Shopping</p>
-                                <div class="itemAppStart">
-                                    <span>4.5</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.weaver.app.prod" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" data-src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Talkie: Soulful AI</p>
-                                <p class="itemAppCate">Entertainment</p>
-                                <div class="itemAppStart">
-                                    <span>4.3</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.facebook.katana" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" data-src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Facebook</p>
-                                <p class="itemAppCate">Social</p>
-                                <div class="itemAppStart">
-                                    <span>3.4</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.ubercab" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/uber.webp" data-src="https://cdn.allofapps.com/app_logo/uber.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Uber - Request a ride</p>
-                                <p class="itemAppCate">Maps &amp; Navigation</p>
-                                <div class="itemAppStart">
-                                    <span>4.7</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.starbucks.mobilecard" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" data-src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Starbucks</p>
-                                <p class="itemAppCate">Food &amp; Drink</p>
-                                <div class="itemAppStart">
-                                    <span>4.8</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.disney.disneyplus" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" data-src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Disney+</p>
-                                <p class="itemAppCate">Entertainment</p>
-                                <div class="itemAppStart">
-                                    <span>4.5</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.amazon.mShop.android.shopping" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" data-src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">Amazon Shopping</p>
-                                <p class="itemAppCate">Shopping</p>
-                                <div class="itemAppStart">
-                                    <span>4.2</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.mcdonalds.app" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" data-src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">McDonald's</p>
-                                <p class="itemAppCate">Food &amp; Drink</p>
-                                <div class="itemAppStart">
-                                    <span>4.6</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="itemAppCont">
-                            <a class="coverlink" href="/app?app=com.openai.chatgpt" aria-label="AndroidPackageName"></a>
-                            <img class="ItemAppLogo lazyImg" src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" data-src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" alt="logo">
-                            <div class="itemAppDesc">
-                                <p class="itemAppName">ChatGPT</p>
-                                <p class="itemAppCate">Productivity</p>
-                                <div class="itemAppStart">
-                                    <span>4.7</span>
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#icon-start"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
+                    <ul class="topAppList" id = "topAppList">
 
                     </ul>
                 </div>
@@ -1909,193 +461,12 @@
                     <div class="topDownloadsTitle">
                         <div class="apptitle">Popular APK</div>
                     </div>
-                    <ul class="topDownloadsList">
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.paypal.android.p2pmobile">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/paypal.webp" data-src="https://cdn.allofapps.com/app_logo/paypal.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">PayPal - Send, Shop, Manage</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.2 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.zzkko">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" data-src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">SHEIN-Shopping Online</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.5 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.weaver.app.prod">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" data-src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Talkie: Soulful AI</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.3 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.facebook.katana">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" data-src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Facebook</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">3.4 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.ubercab">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/uber.webp" data-src="https://cdn.allofapps.com/app_logo/uber.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Uber - Request a ride</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.7 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.starbucks.mobilecard">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" data-src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Starbucks</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.8 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.disney.disneyplus">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" data-src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Disney+</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.5 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.amazon.mShop.android.shopping">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" data-src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">Amazon Shopping</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.2 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.mcdonalds.app">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" data-src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">McDonald's</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.6 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="appItem">
-                            <a class="appCon" href="/app?app=com.openai.chatgpt">
-                                <div class="app-img">
-                                    <img class="lazyImg" src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" data-src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" alt="icon">
-                                </div>
-                                <div class="app-info">
-                                    <div class="app-info-tit">ChatGPT</div>
-                                    <div class="app-info-score">
-                                        <span class="app-rating">4.7 </span>
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#icon-start"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                    <ul class="topDownloadsList" id = "topDownloadsList">
 
                     </ul>
                 </div>
 
             </div>
-        </div>
-
-
-        <div class="breadCrumbs">
-            <a class="crumbs" href="/"> Home </a>
-            <span class="icon">&gt;</span>
-
-            <a class="crumbs" href="/category/news-and-magazines"> News &amp; Magazines </a>
-
-            <span class="icon">&gt;</span>
-            <a class="crumbsNow" href="javascript:;"> NewsBreak: Local News &amp; Alerts </a>
         </div>
     </div>
 </div>
@@ -2115,6 +486,182 @@
         .then(data => {
             document.getElementById('footer').innerHTML = data;
         });
+</script>
+
+<script type="module">
+    const urlParams = new URLSearchParams(window.location.search);
+    const app = urlParams.get('app');  // "John"
+
+    const lang = getLangFromPath()
+    let fetchDataUrl = ""
+    let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+    if(lang == "de"){
+        fetchDataUrl = ""
+    }else if(lang == "us")
+    {
+        fetchDataUrl = ""
+    }else
+    {
+        fetchDataUrl = ""
+    }
+    fetchDataUrl = "./js/dataGet.js"
+
+    import(fetchDataUrl).then(async module => {
+        const { queryTopRankedApps } = module;
+        const { data, error } = await  queryTopRankedApps();
+        $(document).ready(function() {
+            console.log(data)
+            let innerStr = '';
+            let picURL = '';
+            data.forEach((item,index) => {
+
+                picURL = cloudflareUrl + item.image
+
+                innerStr += `<li class="appItem">
+              <a class="appCon" href="./app.html?app=${item.alias}">
+                <div class="app-img">
+                  <img class="lazyImg" src="${picURL}" data-src="${picURL}" alt="icon">
+                </div>
+                <div class="app-info">
+                  <div class="app-info-tit">${item.name}</div>
+                  <div class="app-info-score">
+                    <span class="app-rating">${item.score}</span>
+                    <svg width="12" height="12">
+                      <use xlink:href="#icon-start"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>`
+            })
+
+            document.getElementById("topDownloadsList").innerHTML = innerStr
+
+        });
+    });
+</script>
+
+<script type="module">
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const app = urlParams.get('app');  // "John"
+
+    const lang = getLangFromPath()
+    let fetchDataUrl = ""
+    let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+    if(lang == "de"){
+        fetchDataUrl = ""
+    }else if(lang == "us")
+    {
+        fetchDataUrl = ""
+    }else
+    {
+        fetchDataUrl = ""
+    }
+    fetchDataUrl = "./js/dataGet.js"
+
+    import(fetchDataUrl).then(async module => {
+        const {queryAppsByAlias, queryAppsByTypeWithRank} = module;
+
+        const {data, error} = await queryAppsByAlias(app);
+        const {dataType, errorType} = await queryAppsByTypeWithRank(data[0].type);
+
+        $(document).ready(function () {
+
+            let appInfo = data[0]
+            let innerStr = '';
+            let picURL = '';
+
+            dataType.forEach((item,index) => {
+
+                picURL = cloudflareUrl + item.image
+                innerStr += `<li class="itemAppCont">
+              <a class="coverlink" href="./app.html?app=${item.alias}" aria-label="more"></a>
+              <img class="ItemAppLogo lazyImg" src="${picURL}" data-src="${picURL}" alt="logo">
+              <div class="itemAppDesc">
+                <p class="itemAppName">${item.name}</p>
+                <p class="itemAppCate">${item.type}</p>
+                <div class="itemAppStart">
+                  <span>4.6</span>
+                  <svg width="12" height="12">
+                    <use xlink:href="#icon-start"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>`
+            });
+
+            document.getElementById("topAppList").innerHTML = innerStr
+
+            document.getElementById("storeEntrance").innerHTML = `
+                        <div class="googlePlay">
+                            <a class="coverlink" href="${appInfo.download_link_google}"  target="_blank" aria-label="googlePlay"></a>
+                            <svg width="24" height="25">
+                                <use xlink:href="#icon-googlePlay"></use>
+                            </svg>
+                            <span>Google Play</span>
+                        </div>
+                        <div class="AppStore">
+                            <a class="coverlink" href="${appInfo.download_link_ios}"  target="_blank" aria-label="AppStore"></a>
+                            <svg width="25" height="25">
+                                <use xlink:href="#icon-AppStore"></use>
+                            </svg>
+                            <span>App Store</span>
+                        </div>`
+
+
+
+            picURL = cloudflareUrl + appInfo.image
+            document.getElementById("appCard").innerHTML = `
+                    <img class="appCardImg" src="${picURL}" alt="logo">
+                    <div class="appCardInfo">
+                        <p class="appCardInfoName">${appInfo.name}</p>
+                        <div class="appCardInfoScore">
+                            <svg width="12" height="12">
+                                <use xlink:href="#icon-start"></use>
+                            </svg>
+                            <span class="scoreNum">${appInfo.score}</span>
+                        </div>
+                    </div>`
+
+            let hisApks = appInfo.historical_apks
+            let hisApksJson = JSON.parse(hisApks);
+            if(hisApksJson.length > 0){
+                let versionStr = ``
+                let downLoadURL = ``
+
+                hisApksJson.forEach((item,index) => {
+                    picURL = cloudflareUrl + item.apk_image
+                    downLoadURL = cloudflareUrl + item.download_link
+
+                    versionStr += `<li class="versionItem">
+                            <a class="coverlink" href="${downLoadURL}" aria-label="Download"></a>
+                            <img class="versionItemImg" src="${picURL}" alt="logo">
+                            <div class="versionItemInfo">
+                                <div class="versionNumber">${item.version}</div>
+                                <div class="versionDet">
+                                    <span class="size">${item.size}</span>
+                                    <span class="time">${item.updated}</span>
+                                </div>
+                            </div>
+                            <div class="versionItemRight">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40651 14.7235V10.9062H0.363281V16.7668H19.631V10.9062H17.5878V14.7235H2.40651Z" fill="#0186FF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08789 11.7881L9.08789 0.0664062L10.9045 0.0664062L10.9045 11.7881L9.08789 11.7881Z" fill="#0186FF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99805 10.8626L15.277 5.58365L16.4542 6.76087L9.99805 13.2171L3.54186 6.76087L4.71909 5.58365L9.99805 10.8626Z" fill="#0186FF"></path>
+                                </svg>
+                            </div>
+                        </li>`
+                });
+
+
+                document.getElementById("versionList").innerHTML = versionStr
+            }else{
+
+            }
+            document.body.style.display = "block";
+        });
+    });
 </script>
 
 </body>

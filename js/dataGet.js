@@ -93,3 +93,45 @@ export async function queryAppsByTypeWithRank(type, limit = 12) {
     }
 }
 
+export async function queryAppsByVerWithPagination(ver = "app", page = 1, pageSize = 20) {
+    try {
+        // 根据 ver 确定排序字段
+        let rankField = null;
+        if (ver === "app") {
+            rankField = "rankapp";
+        } else if (ver === "game") {
+            rankField = "rankgame";
+        } else {
+            throw new Error(`不支持的 ver 类型: ${ver}`);
+        }
+
+        console.log(`正在查询 ver="${ver}" 且 ${rankField} != 0 的应用，第 ${page} 页，每页 ${pageSize} 条...`);
+
+        const from = (page - 1) * pageSize;
+        const to = from + pageSize - 1;
+
+        const { data, error, count } = await supabase
+            .from('apps_flat')
+            .select('*', { count: 'exact' })     // 获取总条数
+            .eq('ver', ver)                      // where ver = ?
+            .neq(rankField, 0)                   // and rankX != 0
+            .order(rankField, { ascending: true }) // order by rankX
+            .range(from, to);                    // limit + offset
+
+        if (error) {
+            console.error('Supabase 查询错误:', error);
+            return { data: null, error };
+        }
+
+        // 计算总页数
+        const totalPages = Math.ceil(count / pageSize);
+
+        return { data, totalPages, count, error: null };
+    } catch (err) {
+        console.error('查询过程中出错:', err);
+        return { data: null, error: err };
+    }
+}
+
+
+

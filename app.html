@@ -30,7 +30,7 @@
 
   <script src="./js/common.js"></script>
   <script src="./js/jquery-3.0.0.min.js"></script>
-<body aria-hidden="false">
+<body aria-hidden="false" style="display: none">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <defs>
@@ -416,8 +416,8 @@
         </div>
 
         <div class="frequentlyAsked" id = "frequentlyAsked">
-          <h2 class="frequentlyAskedTitle"> PayPal - Send, Shop, Manage FAQ</h2>
-          <ul class="frequentlyAskedCont">
+          <h2 class="frequentlyAskedTitle" id = "frequentlyAskedTitle"> PayPal - Send, Shop, Manage FAQ</h2>
+          <ul class="frequentlyAskedCont" id = "frequentlyAskedCont">
 
             <li class="itemAsked">
               <div class="Question" style="border-bottom: 1px solid rgb(230, 230, 230);">
@@ -468,17 +468,6 @@
         </div>
 
       </div>
-    </div>
-
-
-    <div class="breadCrumbs">
-      <a class="crumbs" href="/"> Home </a>
-      <span class="icon">&gt;</span>
-
-      <a class="crumbs" href="/category/finance"> Finance </a>
-
-      <span class="icon">&gt;</span>
-      <a class="crumbsNow" href="javascript:;"> PayPal - Send, Shop, Manage </a>
     </div>
 
   </div>
@@ -659,19 +648,78 @@
                 <span>App Store</span>
               </div>
             </div>`
+          }else{
+            document.getElementById("historLink").innerHTML = `<div class="downloadBox">
+
+                                <div class="downloadBtn">
+                                    <div class="download">
+                                        <a class="coverlink" aria-label="more"></a>
+                                        <svg width="24" height="21">
+                                            <use xlink:href="#icon-download"></use>
+                                        </svg>
+                                        <span>Download Latest APK</span>
+                                        <div class="safe">
+                                            <svg width="14" height="14">
+                                                <use xlink:href="#icon-safe"></use>
+                                            </svg>
+                                            <span>100% safe</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="versionHistory">
+                                    <a class="coverlink" href="./version.html?app=${appInfo.alias}" aria-label="more"></a>
+                                    <svg width="29" height="29">
+                                        <use xlink:href="#icon-versionHistory"></use>
+                                    </svg>
+                                    <span>APK Version History</span>
+                                </div>
+
+                            </div>`
           }
 
       try{
         console.log(appInfo.faq)
         let faqJson = JSON.parse(appInfo.faq);
         if(faqJson.length > 0){
-          document.getElementById("frequentlyAsked").style.display = 'none'
-        }else{
 
+          document.getElementById("frequentlyAskedTitle").innerText = appInfo.name
+
+          let freStr = ``
+          faqJson.forEach((item,index) => {
+            freStr += `<li class="itemAsked">
+              <div class="Question" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                <div class="serialNum">${index+1}.</div>
+                <div class="itemAskedText">${item.question}</div>
+                <div class="flagicon">
+
+                  <div class="icon flagImg showIcon" style="display: none;">
+                    <svg width="16" height="16">
+                      <use xlink:href="#FAQ-show"></use>
+                    </svg>
+                  </div>
+                  <div class="icon flagImg hideIcon" style="display: block;">
+                    <svg width="16" height="16">
+                      <use xlink:href="#FAQ-hide"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="Answer" style="display: block;">
+                <p class="AnswerItemText">${item.answer}</p>
+              </div>
+            </li>`
+          });
+          document.getElementById("frequentlyAskedCont").innerHTML = freStr
+        }else{
+          document.getElementById("frequentlyAsked").style.display = 'none'
         }
       }catch (e){
         document.getElementById("frequentlyAsked").style.display = 'none'
       }
+
+
+      document.body.style.display = "block";
 
     });
   });

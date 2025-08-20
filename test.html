@@ -1,64 +1,85 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Supabase 数据查询</title>
-  <!-- 引入 jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-<h1>应用数据查询</h1>
-<div id="results">
-  <p>正在加载数据...</p>
+<div class="pageinationBox">
+  <ul class="pagination">
+    <li class="page-li page-prev no-prev">&lt;</li>
+    <li class="page-li page-number" data-number="1">1</li>
+    <li class="page-li page-number" data-number="2">2</li>
+    <li class="page-li page-number" data-number="3">3</li>
+    <li class="page-li page-number" data-number="4">4</li>
+    <li class="page-li page-number" data-number="5">5</li>
+    <li class="page-li page-next">&gt;</li>
+  </ul>
 </div>
 
-<script type="module">
-  const fetchDataUrl = "./js/dataGet.js";
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const pagination = document.querySelector(".pagination");
+    const prevBtn = document.querySelector(".page-prev");
+    const nextBtn = document.querySelector(".page-next");
+    const pageItems = document.querySelectorAll(".page-number");
+    const totalPages = pageItems.length;
 
-  import(fetchDataUrl).then(async module => {
-    const { queryAppsByType } = module;
+    // 从 URL 获取当前页
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentPage = parseInt(urlParams.get("page")) || 1;
 
-    let typeStr = "Board";
+    // 刷新时高亮当前页
+    function setActivePage(page) {
+      pageItems.forEach(li => li.classList.remove("page-active"));
+      const activeItem = document.querySelector(`.page-number[data-number="${page}"]`);
+      if (activeItem) activeItem.classList.add("page-active");
 
-    try {
-      const { data, error } = await queryAppsByType(typeStr);
-
-      $(document).ready(function() {
-        console.log('查询结果:', data);
-
-        if (error) {
-          $('#results').html(`
-                            <div style="color: red;">
-                                <h3>查询出错</h3>
-                                <p>${error.message}</p>
-                            </div>
-                        `);
-          return;
-        }
-
-        if (data && data.length > 0) {
-          let html = `<h3>类型为 "${typeStr}" 的应用 (${data.length} 个)</h3>`;
-          data.forEach(app => {
-            html += `
-                                <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
-                                    <h4>${app.name || '未命名应用'}</h4>
-                                    <p>ID: ${app.id}</p>
-                                    <p>类型: ${app.type}</p>
-                                    <p>创建时间: ${app.created_at || '未知'}</p>
-                                </div>
-                            `;
-          });
-          $('#results').html(html);
-        } else {
-          $('#results').html(`<p>没有找到类型为 "${typeStr}" 的应用</p>`);
-        }
-      });
-    } catch (importError) {
-      console.error('导入模块出错:', importError);
-      $('#results').html('<p>加载数据模块失败</p>');
+      prevBtn.classList.toggle("no-prev", page === 1);
+      nextBtn.classList.toggle("no-next", page === totalPages);
     }
+
+    // 跳转函数
+    function goToPage(page) {
+      const newUrl = new URL(window.location.href);
+      newUrl.searchParams.set("page", page);
+      window.location.href = newUrl;  // 整个页面刷新
+    }
+
+    // 点击页码
+    pageItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const page = parseInt(item.dataset.number);
+        goToPage(page);
+      });
+    });
+
+    // 点击上一页
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        goToPage(currentPage - 1);
+      }
+    });
+
+    // 点击下一页
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        goToPage(currentPage + 1);
+      }
+    });
+
+    // 初始设置高亮
+    setActivePage(currentPage);
   });
 </script>
-</body>
-</html>
+
+<style>
+  .page-li {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .page-li.page-active {
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .page-li.no-prev,
+  .page-li.no-next {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+</style>

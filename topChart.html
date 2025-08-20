@@ -20,7 +20,12 @@
   <link rel="shortcut icon" href="https://cdn.allofapps.com/icons/allofapps_48.webp" type="image/x-icon">
   <link rel="manifest" href="/main.webmanifest">
   <link rel="preload" href="./css/topChart.css" as="style">
-  <link rel="stylesheet" href="./css/topChart.css"><body>
+  <link rel="stylesheet" href="./css/topChart.css">
+
+  <script src="./js/common.js"></script>
+  <script src="./js/jquery-3.0.0.min.js"></script>
+
+<body style="display: none">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <defs>
@@ -390,7 +395,7 @@
 
 
       <div class="chartsWrap">
-        <ul class="topChartNav">
+        <ul class="topChartNav" id = "topChartNav">
           <li class="itemTab">
             <a class="itemTabCont" id="appItemTab" href="/topChart?Charts=App" style="background: rgb(1, 134, 255); color: rgb(255, 255, 255);">
               Top Free Apps
@@ -402,7 +407,7 @@
             </a>
           </li>
         </ul>
-        <ul class="appList">
+        <ul class="appList" id = "appList">
 
           <li class="appsItem">
             <a class="coverlink" href="/app?app=com.paypal.android.p2pmobile" aria-label="more"></a>
@@ -431,561 +436,6 @@
             </div>
           </li>
 
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.particlenews.newsbreak" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="appsItemSerial">
-
-                  <div class="ItemSerialNum">2</div>
-
-                </div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/news-break.webp" alt="NewsBreak: Local News &amp; Alerts">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">NewsBreak: Local News &amp; Alerts</p>
-                  <p class="cardType">News &amp; Magazines</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.6</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.zzkko" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">3</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.zzkko.webp" alt="SHEIN-Shopping Online">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">SHEIN-Shopping Online</p>
-                  <p class="cardType">Shopping</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.5</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.weaver.app.prod" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">4</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.weaver.app.prod.webp" alt="Talkie: Soulful AI">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Talkie: Soulful AI</p>
-                  <p class="cardType">Entertainment</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.3</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.facebook.katana" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">5</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.facebook.katana.webp" alt="Facebook">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Facebook</p>
-                  <p class="cardType">Social</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">3.4</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.ubercab" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">6</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/uber.webp" alt="Uber - Request a ride">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Uber - Request a ride</p>
-                  <p class="cardType">Maps &amp; Navigation</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.7</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.starbucks.mobilecard" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">7</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.starbucks.mobilecard.webp" alt="Starbucks">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Starbucks</p>
-                  <p class="cardType">Food &amp; Drink</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.8</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.disney.disneyplus" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">8</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/upload-logo/com.disney.disneyplus.webp" alt="Disney+">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Disney+</p>
-                  <p class="cardType">Entertainment</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.5</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.amazon.mShop.android.shopping" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">9</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/upload-logo/amazon-shopping.webp" alt="Amazon Shopping">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Amazon Shopping</p>
-                  <p class="cardType">Shopping</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.2</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.mcdonalds.app" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">10</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/mcdonald-s.webp" alt="McDonald's">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">McDonald's</p>
-                  <p class="cardType">Food &amp; Drink</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.6</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.openai.chatgpt" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">11</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.openai.chatgpt.webp" alt="ChatGPT">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">ChatGPT</p>
-                  <p class="cardType">Productivity</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.7</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.enflick.android.TextNow" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">12</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/textnow.webp" alt="TextNow: Call + Text Unlimited">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">TextNow: Call + Text Unlimited</p>
-                  <p class="cardType">Communication</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.5</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.instagram.barcelona" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">13</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.instagram.barcelona.webp" alt="Threads, an Instagram app">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Threads, an Instagram app</p>
-                  <p class="cardType">Social</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.1</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.wbd.stream" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">14</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.wbd.stream.webp" alt="Max: Stream HBO, TV, &amp; Movies">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Max: Stream HBO, TV, &amp; Movies</p>
-                  <p class="cardType">Entertainment</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.7</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=org.telegram.messenger" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">15</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/telegram.webp" alt="Telegram">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Telegram</p>
-                  <p class="cardType">Communication</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.3</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.squareup.cash" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">16</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/logo/square-cash.webp" alt="Cash App">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Cash App</p>
-                  <p class="cardType">Finance</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.6</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.indeed.android.jobsearch" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">17</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/com.indeed.android.jobsearch.webp" alt="Indeed Job Search">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Indeed Job Search</p>
-                  <p class="cardType">Business</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.7</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.twitter.android" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">18</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/upload-logo/com.twitter.android.png" alt="X">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">X</p>
-                  <p class="cardType">Social</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">3.8</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.discord" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">19</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/discord.webp" alt="Discord: Talk, Chat &amp; Hang Out">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Discord: Talk, Chat &amp; Hang Out</p>
-                  <p class="cardType">Communication</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.3</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
-          <li class="appsItem">
-            <a class="coverlink" href="/app?app=com.snapchat.android" aria-label="more"></a>
-            <div class="appsItemCard">
-              <div class="appsItemSerial">
-
-                <div class="ItemSerialNum">20</div>
-
-              </div>
-              <div class="appsItemCardLeft">
-                <div class="cardImg">
-                  <img class="lazyImg" src="/statics/image/square-loading.webp" data-src="https://cdn.allofapps.com/app_logo/snapchat.webp" alt="Snapchat">
-                </div>
-                <div class="cardDet">
-                  <p class="cardTitle">Snapchat</p>
-                  <p class="cardType">Communication</p>
-                  <div class="cardDetInfo">
-                    <div class="cardDetGrade">
-                      <span class="cardDetGradeNum">4.1</span>
-                      <svg width="12" height="12">
-                        <use xlink:href="#icon-start"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="download">Download</div>
-            </div>
-          </li>
-
         </ul>
         <div class="loading" style="display: none;"></div>
 
@@ -993,7 +443,13 @@
           <ul class="pagination">
             <li class="page-li page-prev no-prev"> &lt; </li>
             <li class="page-li page-number page-active" data-number="1">1</li>
-            <li class="page-li page-number" data-number="2">2</li><li class="page-li page-number" data-number="3">3</li><li class="page-li page-number" data-number="4">4</li><li class="page-li page-number" data-number="5">5</li><li class="page-li page-next"> &gt; </li></ul></div>
+            <li class="page-li page-number" data-number="2">2</li>
+            <li class="page-li page-number" data-number="3">3</li>
+            <li class="page-li page-number" data-number="4">4</li>
+            <li class="page-li page-number" data-number="5">5</li>
+            <li class="page-li page-next"> &gt; </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="topChartsRight">
@@ -1003,73 +459,73 @@
         <ul class="CategoryList">
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/finance" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Finance" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Finance.webp" data-src="./img/Finance.webp" alt="Finance">
             <div class="itemCateName">Finance</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/news-and-magazines" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=News %26 Magazines" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/News_and_Magazines.webp" data-src="./img/News_and_Magazines.webp" alt="News &amp; Magazines">
             <div class="itemCateName">News &amp; Magazines</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/shopping" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Shopping" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Shopping.webp" data-src="./img/Shopping.webp" alt="Shopping">
             <div class="itemCateName">Shopping</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/entertainment" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Entertainment" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Entertainment.png" data-src="./img/Entertainment.png" alt="Entertainment">
             <div class="itemCateName">Entertainment</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/social" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Social" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Social.webp" data-src="./img/Social.webp" alt="Social">
             <div class="itemCateName">Social</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/maps-and-navigation" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Maps %26 Navigation" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Maps_and_Navigation.webp" data-src="./img/Maps_and_Navigation.webp" alt="Maps &amp; Navigation">
             <div class="itemCateName">Maps &amp; Navigation</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/food-and-drink" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Food %26 Drink" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Food_and_Drink.webp" data-src="./img/Food_and_Drink.webp" alt="Food &amp; Drink">
             <div class="itemCateName">Food &amp; Drink</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/productivity" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Productivity" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Productivity.webp" data-src="./img/Productivity.webp" alt="Productivity">
             <div class="itemCateName">Productivity</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/communication" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Communication" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Communication.webp" data-src="./img/Communication.webp" alt="Communication">
             <div class="itemCateName">Communication</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/business" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Business" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Business.png" data-src="./img/Business.png" alt="Business">
             <div class="itemCateName">Business</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/video-players" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Video Players %26 Editors" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Video_Players_and_Editors.webp" data-src="./img/Video_Players_and_Editors.webp" alt="Video Players &amp; Editors">
             <div class="itemCateName">Video Players &amp; Editors</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/music-and-audio" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Music %26 Audio" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Maps_and_Navigation.webp" data-src="./img/Maps_and_Navigation.webp" alt="Music &amp; Audio">
             <div class="itemCateName">Music &amp; Audio</div>
           </li>
@@ -1081,73 +537,73 @@
         <ul class="CategoryList">
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/puzzle" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Puzzle" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Puzzle-icon.webp" data-src="./img/Puzzle-icon.webp" alt="Puzzle-icon">
             <div class="itemCateName">Puzzle</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/racing" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Racing" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Racing-icon.webp" data-src="./img/Racing-icon.webp" alt="Racing-icon">
             <div class="itemCateName">Racing</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/arcade" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Arcade" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Arcade-icon.webp" data-src="./img/Arcade-icon.webp" alt="Arcade-icon">
             <div class="itemCateName">Arcade</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/board" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Board" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Board-icon.png" data-src="./img/Board-icon.png" alt="Board-icon">
             <div class="itemCateName">Board</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/music" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Music" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Music-icon.png" data-src="./img/Music-icon.png" alt="Music-icon">
             <div class="itemCateName">Music</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/educational" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Educational" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Educational-icon.webp" data-src="./img/Educational-icon.webp" alt="Educational-icon">
             <div class="itemCateName">Educational</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/action" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Action" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Action-icon.png" data-src="./img/Action-icon.png" alt="Action-icon">
             <div class="itemCateName">Action</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/adventure" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Adventure" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Adventure-icon.webp" data-src="./img/Adventure-icon.webp" alt="Adventure-icon">
             <div class="itemCateName">Adventure</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/sports" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Sports" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Sports-icon.webp" data-src="./img/Sports-icon.webp" alt="Sports-icon">
             <div class="itemCateName">Sports</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/strategy" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Strategy" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Strategy-icon.webp" data-src="./img/Strategy-icon.webp" alt="Strategy-icon">
             <div class="itemCateName">Strategy</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/role-playing" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Role Playing" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Role_Playing-icon.webp" data-src="./img/Role_Playing-icon.webp" alt="Role Playing-icon">
             <div class="itemCateName">Role Playing</div>
           </li>
 
           <li class="itemCate">
-            <a class="coverlink" href="/category/trivia" aria-label="more"></a>
+            <a class="coverlink" href="./categoryList.html?type=Trivia" aria-label="more"></a>
             <img class="itemCateImg lazyImg" src="./img/Trivia-icon.webp" data-src="./img/Trivia-icon.webp" alt="Trivia-icon">
             <div class="itemCateName">Trivia</div>
           </li>
@@ -1158,11 +614,11 @@
   </div>
 
 
-  <div class="breadCrumbs">
-    <a class="crumbs" href="/"> Home </a>
-    <span class="icon">&gt;</span>
-    <a class="crumbsNow" href="javascript:;"> Top Charts </a>
-  </div>
+<!--  <div class="breadCrumbs">-->
+<!--    <a class="crumbs" href="/"> Home </a>-->
+<!--    <span class="icon">&gt;</span>-->
+<!--    <a class="crumbsNow" href="javascript:;"> Top Charts </a>-->
+<!--  </div>-->
 </div>
 
 <footer id = "footer"></footer>
@@ -1203,6 +659,160 @@
             document.getElementById('footer').innerHTML = data;
           });
 </script>
+
+  <script type="module">
+    const urlParams = new URLSearchParams(window.location.search);
+    let ver = urlParams.get('ver');
+    let page = urlParams.get('page');
+
+    if (ver === null || ver === "") {
+      console.log("ver 没有值");
+      ver = "app"
+    }
+
+    if (page === null || page === "") {
+      console.log("page 没有值");
+      page = 1
+    }
+
+    const lang = getLangFromPath()
+    let fetchDataUrl = ""
+    let cloudflareUrl = "https://pub-89d91fa82a5c4a4397c7050dbab9ecd6.r2.dev/"
+    if(lang == "de"){
+      fetchDataUrl = ""
+    }else if(lang == "us")
+    {
+      fetchDataUrl = ""
+    }else
+    {
+      fetchDataUrl = ""
+    }
+    fetchDataUrl = "./js/dataGet.js"
+    import(fetchDataUrl).then(async module => {
+      const { queryAppsByVerWithPagination } = module;
+      const { data, error } = await  queryAppsByVerWithPagination(ver,page,20);
+      $(document).ready(function() {
+        console.log(data)
+        let innerStr = '';
+        let picURL = '';
+        let number = 0;
+
+        data.forEach((item, index) => {
+
+          if(item.ver == "app"){
+            number = item.rankapp
+            document.getElementById("topChartNav").innerHTML = `<li class="itemTab">
+            <a class="itemTabCont" id="appItemTab" href="./topChart.html?ver=app" style="background: rgb(1, 134, 255); color: rgb(255, 255, 255);">
+              Top Free Apps
+            </a>
+          </li>
+          <li class="itemTab">
+            <a class="itemTabCont" id="gameItemTab" href="./topChart.html?ver=game">
+              Top Free Games
+            </a>
+          </li>`
+          }else{
+            number = item.rankgame
+            document.getElementById("topChartNav").innerHTML = `<li class="itemTab">
+                            <a class="itemTabCont" id="appItemTab" href="./topChart.html?ver=app">
+                                Top Free Apps
+                            </a>
+                        </li>
+                        <li class="itemTab">
+                            <a class="itemTabCont" id="gameItemTab" href="./topChart.html?ver=game" style="background: rgb(1, 134, 255); color: rgb(255, 255, 255);">
+                                Top Free Games
+                            </a>
+                        </li>`
+          }
+          picURL = cloudflareUrl + item.image
+
+            innerStr += `<li class="appsItem">
+            <a class="coverlink" href="./app.html?app=${item.alias}" aria-label="more"></a>
+            <div class="appsItemCard">
+              <div class="appsItemSerial">
+                <div class="ItemSerialNum">${number}</div>
+              </div>
+              <div class="appsItemCardLeft">
+                <div class="cardImg">
+                  <img class="lazyImg" src="${picURL}" data-src="${picURL}" alt="${item.name}">
+                </div>
+                <div class="cardDet">
+                  <p class="cardTitle">${item.name}</p>
+                  <p class="cardType">${item.type}</p>
+                  <div class="cardDetInfo">
+                    <div class="cardDetGrade">
+                      <span class="cardDetGradeNum">${item.score}</span>
+                      <svg width="12" height="12">
+                        <use xlink:href="#icon-start"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="download">Download</div>
+            </div>
+          </li>`
+        });
+        document.getElementById("appList").innerHTML = innerStr
+      });
+      document.body.style.display = "block";
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const prevBtn = document.querySelector(".page-prev");
+      const nextBtn = document.querySelector(".page-next");
+      const pageItems = document.querySelectorAll(".page-number");
+      const totalPages = pageItems.length;
+
+      // 从 URL 获取当前页
+      const urlParams = new URLSearchParams(window.location.search);
+      let currentPage = parseInt(urlParams.get("page")) || 1;
+
+      // 设置高亮
+      function setActivePage(page) {
+        pageItems.forEach(li => li.classList.remove("page-active"));
+        const activeItem = document.querySelector(`.page-number[data-number="${page}"]`);
+        if (activeItem) activeItem.classList.add("page-active");
+
+        prevBtn.classList.toggle("no-prev", page === 1);
+        nextBtn.classList.toggle("no-next", page === totalPages);
+      }
+
+      // 跳转函数（保留其他参数）
+      function goToPage(page) {
+        const newUrl = new URL(window.location.href);
+        newUrl.searchParams.set("page", page); // 只更新 page，其他参数保留
+        window.location.href = newUrl.toString(); // 整个页面刷新
+      }
+
+      // 点击页码
+      pageItems.forEach(item => {
+        item.addEventListener("click", () => {
+          const page = parseInt(item.dataset.number);
+          goToPage(page);
+        });
+      });
+
+      // 点击上一页
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          goToPage(currentPage - 1);
+        }
+      });
+
+      // 点击下一页
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < totalPages) {
+          goToPage(currentPage + 1);
+        }
+      });
+
+      // 初始化
+      setActivePage(currentPage);
+    });
+  </script>
 
 </body>
 </html>
